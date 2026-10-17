@@ -1,0 +1,459 @@
+{
+  "schema": 2,
+  "enabled": true,
+  "published": true,
+  "version": "2026.10.17.175",
+  "retainedBundledModelIds": [
+    "mcdu"
+  ],
+  "packs": [
+    {
+      "id": "overhead-forward",
+      "title": "Forward overhead \u00b7 3D",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 40435085,
+      "sha256": "7f65ef76286fe1e342d62c07b15e4fcfd1fb7c9f4663b829af1f058ecd83e1d5",
+      "installedBytes": 82560452,
+      "manifestSha256": "8114cba26a4998f97dae51e1570fbd301866f15700ca3ee1ba9e7fab9fd24aa2",
+      "archive": "overhead-forward-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "models/20vu-rack.glb",
+          "bytes": 1466024,
+          "sha256": "36a7781b5e48fe1559d42ddbd8cb16eb6cf560e635e5257f8d6673e33404c549",
+          "modelId": "20vu-rack"
+        },
+        {
+          "path": "models/overhead-center-cover.glb",
+          "bytes": 335768,
+          "sha256": "b7f46d86c9d9d63bb22e1155b7d83bfd344ce9e90c0dafd3757565e368ba4de6",
+          "modelId": "overhead-center-cover"
+        },
+        {
+          "path": "models/adirs.glb",
+          "bytes": 5441176,
+          "sha256": "353b7590b5c723ec5828a1c8d7a2840d5c25f7254be01d24f7e10be41416a383",
+          "modelId": "adirs"
+        },
+        {
+          "path": "models/electrical.glb",
+          "bytes": 9159804,
+          "sha256": "d94afd40ed7eb153aa202ff7d126a5b10a3aabb2218bb6641132c7985f62d142",
+          "modelId": "electrical"
+        },
+        {
+          "path": "models/fire.glb",
+          "bytes": 981996,
+          "sha256": "ffec74a47eaaa658a69adcfaabdb145e132fec05c20456173c95ed160fc8021b",
+          "modelId": "fire"
+        },
+        {
+          "path": "models/hyd-fuel.glb",
+          "bytes": 6637312,
+          "sha256": "75c2e45365e99fd00c62e06623dc485db70f60f6658c8ae049b9864d0e58c0a5",
+          "modelId": "hyd-fuel"
+        },
+        {
+          "path": "models/flight-controls.glb",
+          "bytes": 5236000,
+          "sha256": "b363f6a6ae2403ddd774ba9cc3fbce1d96044d02f08f9153ae8de282cab5ed09",
+          "modelId": "flight-controls"
+        },
+        {
+          "path": "models/ac.glb",
+          "bytes": 12144472,
+          "sha256": "bf569ec210b768e2ff6f59a4775f29e2ae209fd4ebe29ef15f124be4182dfdd5",
+          "modelId": "ac"
+        },
+        {
+          "path": "models/25vu.glb",
+          "bytes": 32927344,
+          "sha256": "757d5274be48b0e1116a93df514d5e1d785932ae2045909cc815ea95f204dc6a",
+          "modelId": "25vu"
+        },
+        {
+          "path": "models/24vu.glb",
+          "bytes": 6639908,
+          "sha256": "096809ef20e55337cc324aa1ab30697d88d53a602767682d9f5c85e58c16f1df",
+          "modelId": "24vu"
+        },
+        {
+          "path": "models/27vu.glb",
+          "bytes": 1590648,
+          "sha256": "8c87557d67f32ee9777b7af59fd33f209036bbfd1e4ccdd4d94784c0e06a39c6",
+          "modelId": "27vu"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/overhead-forward-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "overhead-aft",
+      "title": "Aft overhead \u00b7 3D",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 57579683,
+      "sha256": "2febe65632ff6a03000424be17efdd157b9deb4671f25420f503b61fc30da722",
+      "installedBytes": 124419928,
+      "manifestSha256": "def5334a0efe47808e2adafbfb9ef3808bab230a1a719eba8c7f12c1ed89ed72",
+      "archive": "overhead-aft-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "models/dome-cover-rh.glb",
+          "bytes": 310620,
+          "sha256": "179a21a72d65117056708835502eef43c94e9b3cc7ac794d2b671664a6aa4a98",
+          "modelId": "dome-cover-rh"
+        },
+        {
+          "path": "models/overhead-right-aft-cover.glb",
+          "bytes": 335748,
+          "sha256": "2d11e1e41757929417758be282d3832b9c4cf1596f57c4e2c280d74ae34a5260",
+          "modelId": "overhead-right-aft-cover"
+        },
+        {
+          "path": "models/21vu.glb",
+          "bytes": 5856852,
+          "sha256": "d6e97129f2c91fcfeb49113170a5cf235d7f6edaacd33c87f1af0af8ce6b6775",
+          "modelId": "21vu"
+        },
+        {
+          "path": "models/22vu.glb",
+          "bytes": 9502024,
+          "sha256": "fdd3e75aa8422e7c0eec90e17725e5705d207933e3039644145ccfed4c18fd03",
+          "modelId": "22vu"
+        },
+        {
+          "path": "models/48vu.glb",
+          "bytes": 4401256,
+          "sha256": "971ecc4fec24e557a18f38c10fdd406e05c2e5e991020b6a8daf7b492887ee46",
+          "modelId": "48vu"
+        },
+        {
+          "path": "models/50vu.glb",
+          "bytes": 8572052,
+          "sha256": "73c23e57c9a43f74a02da5ece54a44ce339d74313d31f0ef01b9ab60e5735adb",
+          "modelId": "50vu"
+        },
+        {
+          "path": "models/51vu.glb",
+          "bytes": 4218484,
+          "sha256": "047ada2eb40e17f2301a085f5c8454ee97c2ed6670c20ebc1a4ad591914784e6",
+          "modelId": "51vu"
+        },
+        {
+          "path": "models/54vu.glb",
+          "bytes": 4725672,
+          "sha256": "2c5655484f071ece77884c06cc032339ac9b450ddd6b83baf29c974b7b650da5",
+          "modelId": "54vu"
+        },
+        {
+          "path": "models/observer-outlets.glb",
+          "bytes": 489088,
+          "sha256": "e89986db197c6c7a83f94fda0251c5de681a2a2caa5c2f7d85bdcfb3d0b548a1",
+          "modelId": "observer-outlets"
+        },
+        {
+          "path": "models/49vu.glb",
+          "bytes": 21497288,
+          "sha256": "ab19c64f2dd2fe17a30476bf7ba7bba53c08b5409f3cedcf2fa1f159d68bc530",
+          "modelId": "49vu"
+        },
+        {
+          "path": "models/elt-serpe.glb",
+          "bytes": 376220,
+          "sha256": "41533c9749dd199cfbcca1405ace5deea91530df025db052a403ca09f8f336dd",
+          "modelId": "elt-serpe"
+        },
+        {
+          "path": "models/data-loading-selector.glb",
+          "bytes": 12845592,
+          "sha256": "fa9384f6cb5599287cb65024e4abe146ce27a9b8ef9f9a76d6c46e18392875eb",
+          "modelId": "data-loading-selector"
+        },
+        {
+          "path": "models/door-controller.glb",
+          "bytes": 29165492,
+          "sha256": "8c02cdd0c84450f306766250f89fdf71781b37044a59a222b081022697a46d6f",
+          "modelId": "door-controller"
+        },
+        {
+          "path": "models/rmp-classic.glb",
+          "bytes": 22123540,
+          "sha256": "d35bdeda62965c8c685b6a057a8f3ed17fa31200f603752d5078d42385eb71d8",
+          "modelId": "rmp-classic"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/overhead-aft-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "pedestal",
+      "title": "Center pedestal \u00b7 3D",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 7915667,
+      "sha256": "1e26c8afb16daeb894051c1856b0f133f47ccb3504a5aca295f2a8682f1bfcb1",
+      "installedBytes": 30919624,
+      "manifestSha256": "a6130c4ec6e4cb0bc68b58020c2a116da75d157143fbe202d14636b4ae24d38a",
+      "archive": "pedestal-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "models/pedestal.glb",
+          "bytes": 17541884,
+          "sha256": "9af57d9a7399513bfaf3cc017927b1e869eb64d771c5f25ba87e5e94f4e67823",
+          "modelId": "pedestal"
+        },
+        {
+          "path": "models/8vu.glb",
+          "bytes": 1150408,
+          "sha256": "188974548f5c92261b98a467ec37d648358464d6924a2f5de56a2831348b9084",
+          "modelId": "8vu"
+        },
+        {
+          "path": "models/switching.glb",
+          "bytes": 1630848,
+          "sha256": "e12efb2bb9d4cba7ea0c3578af6f51cc8d8938d41fc26d91fa9bebb5ae7c5548",
+          "modelId": "switching"
+        },
+        {
+          "path": "models/111vu.glb",
+          "bytes": 561016,
+          "sha256": "6293e1d50583d2fffc51d337b5df62f3db87237690c2368d5791fdcf2529ef74",
+          "modelId": "111vu"
+        },
+        {
+          "path": "models/112vu.glb",
+          "bytes": 517924,
+          "sha256": "5e4badd0f395530de69a92d935801738b4482a3c7800fd6a3dfecabea4ed39d0",
+          "modelId": "112vu"
+        },
+        {
+          "path": "models/119vu.glb",
+          "bytes": 501308,
+          "sha256": "2c6a43211ab95acaf46e88b3f89a5f81580ac6e31415253dc2b5ccb7530e3e67",
+          "modelId": "119vu"
+        },
+        {
+          "path": "models/110vu.glb",
+          "bytes": 683908,
+          "sha256": "4d6e8f6103cb8fbc8f82c218047dc02f7d18072ebe44d1520b10f0dc0f4fce5b",
+          "modelId": "110vu"
+        },
+        {
+          "path": "models/115vu.glb",
+          "bytes": 738384,
+          "sha256": "70a8ad63729dbffd430a3ff70335ab658b2030128e4f8dc6398b6cebb884b4b7",
+          "modelId": "115vu"
+        },
+        {
+          "path": "models/acp.glb",
+          "bytes": 6093208,
+          "sha256": "e5898b2053fb1cc0413a977204ca656ce42b4c965f7febcd0eaa63237334cedb",
+          "modelId": "acp"
+        },
+        {
+          "path": "models/audio.glb",
+          "bytes": 1500736,
+          "sha256": "0249b527080b89334f2816a8e1043a226aed1cd0f849c6d78933d6e3bdd316b6",
+          "modelId": "audio"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/pedestal-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "instruments",
+      "title": "Instruments and FCU \u00b7 3D",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 2625187,
+      "sha256": "d39f262b0d5ea41765917652f190186e15cd46cd30d596a75f924fbd8e07c40f",
+      "installedBytes": 14808436,
+      "manifestSha256": "8c3f200dcafa71e2b652f80f6eba587ab68eb251a3b9fc17c74c3effba6d1622",
+      "archive": "instruments-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "models/mip-center-classic-cover.glb",
+          "bytes": 636836,
+          "sha256": "5157c33d78c6c2261d7362750f0dce3ac45a8388fce0014c03320e0d5028af1b",
+          "modelId": "mip-center-classic-cover"
+        },
+        {
+          "path": "models/standby-compass.glb",
+          "bytes": 1887744,
+          "sha256": "f28dcf034622abe467634df023c897769a31923045120f3a50f7e66d41392f8f",
+          "modelId": "standby-compass"
+        },
+        {
+          "path": "models/isis.glb",
+          "bytes": 1574400,
+          "sha256": "ed8dee1fa303e15c7eb5b8bcd04a4dab47c01a89093e619402c6fa974136c934",
+          "modelId": "isis"
+        },
+        {
+          "path": "models/dcdu.glb",
+          "bytes": 951504,
+          "sha256": "7f9cdd227fdb7f5c7f68878547d8a9334a9610aeaab0e7465a9d106cff12b3fa",
+          "modelId": "dcdu"
+        },
+        {
+          "path": "models/mip-capt-cover.glb",
+          "bytes": 323040,
+          "sha256": "9465ecfe7b4221fcaeffe722e4eaa5fdfeaff221ab20e05b9932c29fbcfb653e",
+          "modelId": "mip-capt-cover"
+        },
+        {
+          "path": "models/mip-fo-cover.glb",
+          "bytes": 322420,
+          "sha256": "4b07f6e13b6c34650b63901a08f0d4f4945be2837d473d255b3afe3b4e54ceca",
+          "modelId": "mip-fo-cover"
+        },
+        {
+          "path": "models/bezel.glb",
+          "bytes": 189232,
+          "sha256": "d1578d9f8d0c2481e2c2fdb4d88bcfd84f62ea96ef4ee00ec8f1549beaca8ddc",
+          "modelId": "bezel"
+        },
+        {
+          "path": "models/fcu.glb",
+          "bytes": 2720444,
+          "sha256": "db5e8c35e2883ebf3e1800d0df07f37b0c306bd4a55d56ce042027460ae10550",
+          "modelId": "fcu"
+        },
+        {
+          "path": "models/301vu.glb",
+          "bytes": 885052,
+          "sha256": "8a30fabd80ecf608054a26d7d6177d8c85abff238ef013011880070564abac86",
+          "modelId": "301vu"
+        },
+        {
+          "path": "models/500vu.glb",
+          "bytes": 1029360,
+          "sha256": "b974f1a8755fca63f7f1003116b195a908bc0ed4da714dc6f04c8f9db8148aed",
+          "modelId": "500vu"
+        },
+        {
+          "path": "models/402vu.glb",
+          "bytes": 867416,
+          "sha256": "8f99a639e467ed0d78ca4aefff31dab2a9e5a831200ad64df49464464a7e3194",
+          "modelId": "402vu"
+        },
+        {
+          "path": "models/403vu.glb",
+          "bytes": 398164,
+          "sha256": "447db4b8af7ec9a065ed002ddaedec43b4c2179d4c1103bef14e7224d1fdc4da",
+          "modelId": "403vu"
+        },
+        {
+          "path": "models/400vu.glb",
+          "bytes": 291432,
+          "sha256": "7a53f073d757baa06cec67d7b731f2145a14bc5e2e5f5c750acd129a6aa9b59d",
+          "modelId": "400vu"
+        },
+        {
+          "path": "models/401vu.glb",
+          "bytes": 447168,
+          "sha256": "08ca581f3bf32e9cd11fe03622f7f914639a4611b44d12da21c5c7631ca40974",
+          "modelId": "401vu"
+        },
+        {
+          "path": "models/400vu-pb10027.glb",
+          "bytes": 306564,
+          "sha256": "8692945a1e792f3c53c2e2580d25c83bf36e45af11cd99c1723ca082bf62f699",
+          "modelId": "400vu-pb10027"
+        },
+        {
+          "path": "models/gear-lever.glb",
+          "bytes": 901884,
+          "sha256": "cde23496f79c940350df051ace44e03647b900f56b728f0a0548888900c6c22a",
+          "modelId": "gear-lever"
+        },
+        {
+          "path": "models/brake-pressure.glb",
+          "bytes": 453596,
+          "sha256": "72cc0b9b2c79a3b31883f94e3b3d22d373efcd2e31d16b1ee00c47f8d1aa5aee",
+          "modelId": "brake-pressure"
+        },
+        {
+          "path": "models/clock-gmt4200.glb",
+          "bytes": 622180,
+          "sha256": "109d8c07333de41ba51a7a0724f2367fadd7758334086cf2ecc1350d422dc540",
+          "modelId": "clock-gmt4200"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/instruments-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "crew-stations",
+      "title": "Sidesticks and oxygen \u00b7 3D",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 4173614,
+      "sha256": "cb5ebf15c0e534d495f557f2c979025bdaaf07a94366a31e0236df6ae5533c71",
+      "installedBytes": 7421784,
+      "manifestSha256": "44802fb7957964973f46147be8e1a01dfb3b9ad871aeb43e3e49119fee3ed13f",
+      "archive": "crew-stations-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "models/sidestick.glb",
+          "bytes": 3395848,
+          "sha256": "8574ba5107e911cd08dd4e7c3861ff2c9ce1b0b6d579521766dcc145ac9c111e",
+          "modelId": "sidestick"
+        },
+        {
+          "path": "models/sidestick-capt.glb",
+          "bytes": 1038864,
+          "sha256": "08fe303e253f1400bb491f8a4048e0b3f95dd2f49e71dd8eca8b4482016f16ae",
+          "modelId": "sidestick-capt"
+        },
+        {
+          "path": "models/sidestick-fo.glb",
+          "bytes": 860032,
+          "sha256": "4c39b01f4e47d061d2af79e8df42d86bcf6f307edde3ea3530eeead39024d20f",
+          "modelId": "sidestick-fo"
+        },
+        {
+          "path": "models/oxygen.glb",
+          "bytes": 2127040,
+          "sha256": "831f1969c6fc85c007c2437e348969339d3eb47d8224cecd8010681c5ebaf28f",
+          "modelId": "oxygen"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/crew-stations-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "simulator",
+      "title": "Simulator resources",
+      "version": "2026.10.17.175",
+      "free": true,
+      "bytes": 5771286,
+      "sha256": "662103618e79ff1afc6c5639bfc9c9e81065fd8ec9b5fafae916368ca4454fd3",
+      "installedBytes": 6084805,
+      "manifestSha256": "03a6b8cf5b4875ade0cabf4c3a39abab7766e0de132a13665639ce939d63274b",
+      "archive": "simulator-2026.10.17.175.fdpack",
+      "files": [
+        {
+          "path": "images/daylight-horizon.png",
+          "bytes": 1983684,
+          "sha256": "227a91c1ec5aef32b9dc950af06fe60810fc0dc6e42602484920538ec327d3b6"
+        },
+        {
+          "path": "images/display-bezel.png",
+          "bytes": 926483,
+          "sha256": "c3c61c67645f5757173afc00fd05fe4f20d1a575bace268ede8676aa0f7c66d9"
+        },
+        {
+          "path": "images/fcu-body.png",
+          "bytes": 762728,
+          "sha256": "0a6b2073eb2d20eccf653281a2b64b28c90e6766ed0b75735de77b2f5900179e"
+        },
+        {
+          "path": "images/runway-daylight.png",
+          "bytes": 2411910,
+          "sha256": "6f7fce9a8888164ee80310a41dbbe6416c60f61fe8551c30313e24afd4f498c6"
+        }
+      ],
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/simulator-2026.10.17.175.fdpack"
+    }
+  ],
+  "compatibility": "cockpit-models-v1",
+  "sequence": 1
+}
