@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/davidmegginson/ourairports-data",
+  "commit": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+  "sourceCommitDate": "2026-10-16T01:53:13Z",
+  "retrievedAt": "2026-10-17",
+  "license": "Unlicense / public domain",
+  "files": [
+    {
+      "file": "airports.csv",
+      "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv",
+      "bytes": 12748669,
+      "sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75"
+    },
+    {
+      "file": "runways.csv",
+      "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/runways.csv",
+      "bytes": 3969714,
+      "sha256": "eff294dc5c055e7bb48ef43cb3b564399f2741bbfbba0c18c085aea7b9ab988b"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/LICENSE",
+      "bytes": 1211,
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    }
+  ]
+}

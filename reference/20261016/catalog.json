@@ -1,0 +1,177 @@
+{
+  "referenceOnly": true,
+  "packs": [
+    {
+      "schema": 1,
+      "productId": "flightdeck_navdata",
+      "name": "Europe \u2014 airport reference only",
+      "regionId": "europe",
+      "subsetId": "europe",
+      "cycle": "REF-20261016",
+      "validFrom": "2026-10-16",
+      "validTo": "2026-10-17",
+      "validityKind": "reference-snapshot-not-airac",
+      "snapshotDate": "2026-10-16",
+      "coverage": "Europe ICAO airport/runway reference, including Spanish Canary Islands. No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. Not an AIRAC navigation database; community snapshot for simulator reference only.",
+      "supplier": "OurAirports community",
+      "licenseReference": "OurAirports Unlicense / public domain; see OurAirports-LICENSE.txt",
+      "referenceOnly": true,
+      "partialCoverage": true,
+      "personal": true,
+      "evaluation": false,
+      "airportCountries": {
+        "AL": 3,
+        "AT": 54,
+        "BA": 11,
+        "BE": 36,
+        "BG": 37,
+        "BY": 7,
+        "CH": 60,
+        "CZ": 91,
+        "DE": 243,
+        "DK": 25,
+        "EE": 23,
+        "ES": 74,
+        "FI": 31,
+        "FO": 1,
+        "FR": 203,
+        "GB": 153,
+        "GG": 2,
+        "GI": 1,
+        "GR": 45,
+        "HR": 31,
+        "HU": 50,
+        "IE": 25,
+        "IM": 1,
+        "IS": 55,
+        "IT": 120,
+        "JE": 1,
+        "LT": 28,
+        "LU": 1,
+        "LV": 10,
+        "MD": 5,
+        "ME": 5,
+        "MK": 3,
+        "MT": 1,
+        "NL": 20,
+        "NO": 53,
+        "PL": 72,
+        "PT": 34,
+        "RO": 32,
+        "RS": 5,
+        "RU": 66,
+        "SE": 107,
+        "SI": 3,
+        "SK": 30,
+        "SM": 1,
+        "TR": 3,
+        "UA": 33,
+        "XK": 1
+      },
+      "counts": {
+        "airports": 1896,
+        "waypoints": 0,
+        "navaids": 0,
+        "airways": 0,
+        "routes": 0,
+        "procedures": 0
+      },
+      "source": {
+        "repository": "https://github.com/davidmegginson/ourairports-data",
+        "commit": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+        "sourceCommitDate": "2026-10-16T01:53:13Z",
+        "retrievedAt": "2026-10-17",
+        "license": "Unlicense / public domain",
+        "files": [
+          {
+            "file": "airports.csv",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv",
+            "bytes": 12748669,
+            "sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75"
+          },
+          {
+            "file": "runways.csv",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/runways.csv",
+            "bytes": 3969714,
+            "sha256": "eff294dc5c055e7bb48ef43cb3b564399f2741bbfbba0c18c085aea7b9ab988b"
+          },
+          {
+            "file": "LICENSE",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/LICENSE",
+            "bytes": 1211,
+            "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+          }
+        ]
+      },
+      "ambiguousExcluded": [],
+      "bytes": 1966080,
+      "sha256": "c6d0b575ce407cc03641863d9f068be31a0da52e91b31b95a8be796c0a87554d",
+      "file": "flightdeck-europe-reference-20261016.navdb",
+      "runwayEnds": 4329,
+      "downloadUrl": "https://raw.githubusercontent.com/Tstealth32/flightdeck-navigation-data/main/reference/20261016/flightdeck-europe-reference-20261016.navdb"
+    },
+    {
+      "schema": 1,
+      "productId": "flightdeck_navdata",
+      "name": "Spain \u2014 airport reference only",
+      "regionId": "europe",
+      "subsetId": "spain",
+      "cycle": "REF-20261016",
+      "validFrom": "2026-10-16",
+      "validTo": "2026-10-17",
+      "validityKind": "reference-snapshot-not-airac",
+      "snapshotDate": "2026-10-16",
+      "coverage": "Spain ICAO airport/runway reference, including Spanish Canary Islands. No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. Not an AIRAC navigation database; community snapshot for simulator reference only.",
+      "supplier": "OurAirports community",
+      "licenseReference": "OurAirports Unlicense / public domain; see OurAirports-LICENSE.txt",
+      "referenceOnly": true,
+      "partialCoverage": true,
+      "personal": true,
+      "evaluation": false,
+      "airportCountries": {
+        "ES": 74
+      },
+      "counts": {
+        "airports": 74,
+        "waypoints": 0,
+        "navaids": 0,
+        "airways": 0,
+        "routes": 0,
+        "procedures": 0
+      },
+      "source": {
+        "repository": "https://github.com/davidmegginson/ourairports-data",
+        "commit": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+        "sourceCommitDate": "2026-10-16T01:53:13Z",
+        "retrievedAt": "2026-10-17",
+        "license": "Unlicense / public domain",
+        "files": [
+          {
+            "file": "airports.csv",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv",
+            "bytes": 12748669,
+            "sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75"
+          },
+          {
+            "file": "runways.csv",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/runways.csv",
+            "bytes": 3969714,
+            "sha256": "eff294dc5c055e7bb48ef43cb3b564399f2741bbfbba0c18c085aea7b9ab988b"
+          },
+          {
+            "file": "LICENSE",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/LICENSE",
+            "bytes": 1211,
+            "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+          }
+        ]
+      },
+      "ambiguousExcluded": [],
+      "bytes": 159744,
+      "sha256": "336de1d0e1f0534d60793fcf4522e961c74241313fbc5d52eb85684de7005adf",
+      "file": "flightdeck-spain-reference-20261016.navdb",
+      "runwayEnds": 170,
+      "downloadUrl": "https://raw.githubusercontent.com/Tstealth32/flightdeck-navigation-data/main/reference/20261016/flightdeck-spain-reference-20261016.navdb"
+    }
+  ]
+}

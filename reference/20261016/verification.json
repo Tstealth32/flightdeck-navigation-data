@@ -1,0 +1,33 @@
+[
+  {
+    "file": "flightdeck-europe-reference-20261016.navdb",
+    "airports": 1896,
+    "checked": {
+      "LEMD": 8,
+      "LEBL": 6,
+      "LEPA": 4,
+      "GCLP": 4,
+      "GCTS": 2,
+      "EGLL": 4,
+      "LFPG": 8,
+      "EDDF": 8
+    },
+    "sha256": "c6d0b575ce407cc03641863d9f068be31a0da52e91b31b95a8be796c0a87554d",
+    "noProcedures": true,
+    "noInventedMagneticCourses": true
+  },
+  {
+    "file": "flightdeck-spain-reference-20261016.navdb",
+    "airports": 74,
+    "checked": {
+      "LEMD": 8,
+      "LEBL": 6,
+      "LEPA": 4,
+      "GCLP": 4,
+      "GCTS": 2
+    },
+    "sha256": "336de1d0e1f0534d60793fcf4522e961c74241313fbc5d52eb85684de7005adf",
+    "noProcedures": true,
+    "noInventedMagneticCourses": true
+  }
+]
