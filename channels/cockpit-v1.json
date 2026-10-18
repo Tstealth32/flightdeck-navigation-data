@@ -2,7 +2,7 @@
   "schema": 2,
   "enabled": true,
   "published": true,
-  "version": "2026.10.17.175",
+  "version": "2026.10.18.209",
   "retainedBundledModelIds": [
     "mcdu"
   ],
@@ -452,8 +452,32 @@
         }
       ],
       "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.17.175/simulator-2026.10.17.175.fdpack"
+    },
+    {
+      "id": "panel-aircraft-a320-owner",
+      "title": "Flightdeck A320 exterior",
+      "version": "2026.10.18.209",
+      "free": true,
+      "bytes": 15535390,
+      "installedBytes": 19572568,
+      "sha256": "48a3bb346c1375bf5db6a8d8ed323e8d64001c1c69f3c3b7acdb38d633b91ff9",
+      "manifestSha256": "48062574980e4f0f9f5afec6c9005e49bd6df158247e1d982e3ca6fec4b372bd",
+      "files": [
+        {
+          "path": "models/aircraft-a320-owner.glb",
+          "modelId": "aircraft-a320-owner",
+          "bytes": 19572568,
+          "sha256": "80ebb9219f60247e517064f06a7f91f2b069c9f4bca4344c13514e0cc1ff5b43",
+          "component": {
+            "title": "Flightdeck A320 exterior",
+            "description": "Complete owner-supplied textured A320, retaining its original windows, UVs and surface maps, with added Flightdeck titles. Full geometry retained. Generated visual model; not engineering CAD."
+          }
+        }
+      ],
+      "archive": "panel-aircraft-a320-owner-2026.10.18.209.fdpack",
+      "url": "https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/optional-cockpit-2026.10.18.209/panel-aircraft-a320-owner-2026.10.18.209.fdpack"
     }
   ],
   "compatibility": "cockpit-models-v1",
-  "sequence": 1
+  "sequence": 2
 }
