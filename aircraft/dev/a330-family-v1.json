@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "a330",
+  "version": "1.0.0",
+  "title": "A330 family",
+  "variants": [
+    {
+      "id": "a330-300",
+      "label": "A330-300",
+      "type": "A330-343",
+      "engine": "Rolls-Royce Trent 772B-60",
+      "primaryThrust": "EPR",
+      "maxTowTonnes": 242,
+      "maxZfwTonnes": 175,
+      "maxLandingTonnes": 187,
+      "fuelCapacityLitres": 139090,
+      "fuelCapacityTonnes": 109.18565,
+      "wingArea": 361.6,
+      "wingSpan": 60.3,
+      "cruiseMach": 0.82,
+      "cruiseFlowTonnes": 5.4,
+      "takeoffThrustKn": 632,
+      "defaultZfw": 160,
+      "defaultFuel": 30,
+      "configuration": "242 t weight variant with activated center tank; Trent 700. Earlier 233 t A330-300 configurations differ."
+    },
+    {
+      "id": "a330-900",
+      "label": "A330-900neo",
+      "type": "A330-941",
+      "engine": "Rolls-Royce Trent 7000-72",
+      "primaryThrust": "N1",
+      "maxTowTonnes": 251,
+      "maxZfwTonnes": 181,
+      "maxLandingTonnes": 191,
+      "fuelCapacityLitres": 139090,
+      "fuelCapacityTonnes": 109.18565,
+      "wingArea": 361.6,
+      "wingSpan": 64,
+      "cruiseMach": 0.82,
+      "cruiseFlowTonnes": 4.8,
+      "takeoffThrustKn": 648,
+      "defaultZfw": 165,
+      "defaultFuel": 30,
+      "configuration": "251 t weight variant. Does not claim the later 253 t / 183 t enhancement package."
+    }
+  ],
+  "limits": {
+    "vmo": 330,
+    "mmo": 0.86,
+    "vle": 250,
+    "mle": 0.55,
+    "vfe": {
+      "1": 240,
+      "1+F": 215,
+      "2": 196,
+      "3": 186,
+      "FULL": 180
+    },
+    "next": {
+      "0": 240,
+      "1": 196,
+      "1+F": 196,
+      "2": 186,
+      "3": 180
+    }
+  },
+  "sources": [
+    {
+      "title": "Airbus A330-300 characteristics",
+      "url": "https://www.aircraft.airbus.com/en/aircraft/a330/a330-300"
+    },
+    {
+      "title": "Airbus A330neo 251 t configuration",
+      "url": "https://www.aircraft.airbus.com/en/newsroom/stories/2024-02-airbus-to-introduce-a330neo-takeoff-performance-enhancements"
+    },
+    {
+      "title": "Airbus A330 flight deck and systems briefing, Issue 4",
+      "url": "https://www.smartcockpit.com/docs/A330_Flight_Deck_and_Systems_Briefing_For_Pilots.pdf"
+    },
+    {
+      "title": "Airbus A330 training FCOM, system architecture reference",
+      "url": "https://cockpitseeker.com/wp-content/uploads/goodies/ac/A330/330FCOM1.pdf"
+    },
+    {
+      "title": "ATSB A330 hydraulic malfunction investigation",
+      "url": "https://www.atsb.gov.au/investigations/ao-2019-073"
+    },
+    {
+      "title": "Airbus cabin pressure and outflow valves",
+      "url": "https://safetyfirst.airbus.com/preventing-violent-door-opening-due-to-residual-cabin-pressure/"
+    },
+    {
+      "title": "Airbus Trent 7000 technical training, ATA 76, July 2022 (hosted copy)",
+      "url": "https://www.scribd.com/document/945804467/1659881683-REV-JUL-2022-A330-NEO-ATA-76"
+    }
+  ],
+  "coverage": {
+    "architecture": "Independent A330 electrical, hydraulic, fuel, pressurization and flight-control topology; three-spool engine indications; common route editor and flight-guidance practice.",
+    "estimates": "Engine response/limits, fuel flow, tank allocation/transfer thresholds, cabin schedule, V-speeds, aerodynamic coefficients and flight motion are bounded local training estimates, not AFM performance tables.",
+    "pending": "Tail-specific FCOM effectivity, full abnormal ECAM procedures, detailed generator load shedding, FADEC protection laws, fuel CG scheduling and autoland certification fidelity are not validated."
+  },
+  "lessons": [
+    {
+      "title": "Hydraulics",
+      "text": "Green has pumps on both engines and the RAT; blue has an engine 1 pump; yellow has an engine 2 pump. Each circuit has an electric pump. No PTU connects these circuits."
+    },
+    {
+      "title": "Flight controls",
+      "text": "Three PRIM and two SEC computers replace the A320 ELAC/SEC/FAC organization. Available computers and hydraulic circuits affect the local flight-control law."
+    },
+    {
+      "title": "Fuel",
+      "text": "Wing inner/outer, center and trim tanks are represented. Center and outer fuel transfers to inner tanks; trim fuel transfers aft in cruise and forward for descent. Crossfeed shares engine feed, not fuel between wing tanks."
+    },
+    {
+      "title": "Pressurization",
+      "text": "Two outflow valves have FWD/BOTH/AFT manual selection. Automatic pressure control has two controllers. Valve position, cabin altitude and differential pressure respond to packs and leaks."
+    },
+    {
+      "title": "Trent engine variants",
+      "text": "Both engines have N1, N2 and N3 spools. The Trent 700 uses EPR as its normal thrust indication; the Trent 7000 uses N1. The HP spool used for starting is N3."
+    },
+    {
+      "title": "Brakes",
+      "text": "Normal brakes use green hydraulics. Alternate and parking brakes use blue hydraulics and its accumulator. There are eight main-wheel brakes."
+    }
+  ]
+}
