@@ -1,2 +1,3 @@
 c6d0b575ce407cc03641863d9f068be31a0da52e91b31b95a8be796c0a87554d  flightdeck-europe-reference-20261016.navdb
 336de1d0e1f0534d60793fcf4522e961c74241313fbc5d52eb85684de7005adf  flightdeck-spain-reference-20261016.navdb
+8a7da40cced37590e99cfa97230805d5315d12edd73e4e0a8105e16a5249a5f4  flightdeck-india-reference-20261016.navdb

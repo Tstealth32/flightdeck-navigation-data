@@ -7,20 +7,21 @@
 | USA — FAA AIRAC 2610 | [Download USA .navdb](https://github.com/Tstealth32/flightdeck-navigation-data/releases/download/faa-2610/flightdeck-faa-2610.navdb) | FAA airports, fixes, airways and available procedures; U.S. and included territories |
 | Europe — airport reference only | [Download Europe .navdb — 1.88 MiB](https://raw.githubusercontent.com/Tstealth32/flightdeck-navigation-data/main/reference/20261016/flightdeck-europe-reference-20261016.navdb) | 1,896 ICAO airports, 4,329 runway ends; includes the Spain subset |
 | Spain — airport reference only | [Download Spain .navdb — 156 KiB](https://raw.githubusercontent.com/Tstealth32/flightdeck-navigation-data/main/reference/20261016/flightdeck-spain-reference-20261016.navdb) | 74 ICAO airports, 170 runway ends, including the Canary Islands |
+| India — airport reference only | [Download India .navdb — 248 KiB](https://raw.githubusercontent.com/Tstealth32/flightdeck-navigation-data/main/reference/20261016/flightdeck-india-reference-20261016.navdb) | 180 ICAO airports, 370 runway ends |
 
-**Europe and Spain are airport/runway reference snapshots, NOT full AIRAC navigation databases. They contain no SIDs, STARs, approaches, waypoints, navaids or airways.** They cannot resolve a full IFR route. Do not buy an upgrade expecting European procedures from these files. Spain is a smaller alternative to Europe; downloading both is unnecessary.
+**Europe, Spain and India are airport/runway reference snapshots, NOT full AIRAC navigation databases. They contain no SIDs, STARs, approaches, waypoints, navaids or airways.** They cannot resolve a full IFR route. Do not buy an upgrade expecting procedures from these files. Spain is a smaller alternative to Europe; downloading both is unnecessary.
 
 The open reference source snapshot is October 16, 2026. It is community data, not certified or guaranteed current. Its REF cycle and one-day source date interval do not represent AIRAC validity; an expired-date indicator is expected. Unknown magnetic courses and transition altitudes remain unavailable. True headings are stored separately and never relabeled magnetic.
 
 ## Install in the Android development app
 
 1. Download the `.navdb` file directly on your device. Do not rename a CSV/XML/ZIP to `.navdb`.
-2. Open MCDU → Install / switch USA or Europe → Europe → Import Europe .navdb file, and select the file from Downloads.
-3. After verification, select **Use Europe database** while parked/preflight. The selected pack name identifies Europe or Spain. Spain uses the same Europe slot, replacing the previously staged Europe alternative. USA stays saved separately.
+2. Open MCDU → Regions and databases, then import the file from Downloads on a compatible development build.
+3. After verification, select the matching region while parked/preflight. Spain uses the Europe slot; India has a separate slot. USA stays saved separately.
 
 Importing stages a file; selecting activates it. Database activation clears FMGC flight-plan/init/performance data and retains AOC records. These reference files do not populate missing procedures.
 
-**The current public Play Store build does not offer European file import.** These files are for the compatible Android development build. Hosting them does not update the store app or enable a new in-app downloader. Keep your existing procedure pack unless you intentionally want the smaller reference-only alternative.
+**Hosting these files does not update an installed app.** A compatible app version is required to select India. Keep your existing procedure pack unless you intentionally want a reference-only alternative.
 
 ## Integrity and source
 

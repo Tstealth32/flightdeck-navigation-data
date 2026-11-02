@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build redistributable Europe/Spain airport references, never AIRAC procedures.
+"""Build redistributable Europe/Spain/India airport references, never AIRAC procedures.
 
 Only reads the pinned OurAirports CSV snapshot and license in --sources. Unknown
 magnetic courses/transition altitudes remain null. No NATS/ENAIRE data is used.
@@ -45,7 +45,7 @@ def build(sources, output):
     for row in csv.DictReader((sources / 'airports.csv').open()):
         if row['type'] not in ('large_airport', 'medium_airport', 'small_airport'):
             continue
-        if row['continent'] != 'EU' and row['iso_country'] != 'ES':
+        if row['continent'] != 'EU' and row['iso_country'] not in ('ES', 'IN'):
             continue
         ident = row['icao_code']
         # ICAO-only: do not silently fabricate airport codes from local identifiers.
@@ -84,24 +84,31 @@ def build(sources, output):
                 oppositeLon=other['lon'], sourceId=row['id']))
     results = []
     snapshot = origin['sourceCommitDate'][:10]
-    for subset, title in [('europe', 'Europe'), ('spain', 'Spain')]:
-        chosen = {k: v for k, v in airports.items() if subset == 'europe' or v['region'] == 'ES'}
-        assert all(k in chosen for k in ['LEMD', 'LEBL', 'LEPA', 'GCLP', 'GCTS'])
+    for subset, title in [('europe', 'Europe'), ('spain', 'Spain'), ('india', 'India')]:
+        chosen = {k: v for k, v in airports.items() if
+                  (subset == 'europe' and v['region'] != 'IN') or
+                  (subset == 'spain' and v['region'] == 'ES') or
+                  (subset == 'india' and v['region'] == 'IN')}
+        if subset != 'india':
+            assert all(k in chosen for k in ['LEMD', 'LEBL', 'LEPA', 'GCLP', 'GCTS'])
+        else:
+            assert all(k in chosen for k in ['VIDP', 'VABB', 'VOBL', 'VOMM'])
         if subset == 'europe':
             assert 'EGLL' in chosen
         counts = dict(airports=len(chosen), waypoints=0, navaids=0, airways=0, routes=0, procedures=0)
         countries = dict(sorted(collections.Counter(a['region'] for a in chosen.values()).items()))
-        coverage = (title + ' ICAO airport/runway reference, including Spanish Canary Islands. '
+        coverage = (title + ' ICAO airport/runway reference' +
+                    (', including Spanish Canary Islands. ' if subset != 'india' else '. ') +
                     'No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. '
                     'Not an AIRAC navigation database; community snapshot for simulator reference only.')
         name = f'flightdeck-{subset}-reference-{snapshot.replace("-", "")}.navdb'
         target = output / name
         if target.exists():
             raise FileExistsError(target)
-        # The current Android region library has USA and Europe slots. Spain is
-        # an explicitly labeled smaller alternative for that same Europe slot.
+        # Spain is an explicitly labeled smaller alternative for the Europe slot.
+        # India has its own region identity and never replaces another region.
         metadata = dict(schema=1, productId='flightdeck_navdata', name=title + ' — airport reference only',
-            regionId='europe', subsetId=subset, cycle='REF-' + snapshot.replace('-', ''),
+            regionId='india' if subset == 'india' else 'europe', subsetId=subset, cycle='REF-' + snapshot.replace('-', ''),
             validFrom=snapshot, validTo=(datetime.date.fromisoformat(snapshot) + datetime.timedelta(days=1)).isoformat(),
             validityKind='reference-snapshot-not-airac', snapshotDate=snapshot, coverage=coverage,
             supplier='OurAirports community', licenseReference='OurAirports Unlicense / public domain; see OurAirports-LICENSE.txt',

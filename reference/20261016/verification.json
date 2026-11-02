@@ -29,5 +29,19 @@
     "sha256": "336de1d0e1f0534d60793fcf4522e961c74241313fbc5d52eb85684de7005adf",
     "noProcedures": true,
     "noInventedMagneticCourses": true
+  },
+  {
+    "file": "flightdeck-india-reference-20261016.navdb",
+    "airports": 180,
+    "checked": {
+      "VIDP": 8,
+      "VABB": 4,
+      "VOBL": 4,
+      "VOMM": 4,
+      "VIAR": 2
+    },
+    "sha256": "8a7da40cced37590e99cfa97230805d5315d12edd73e4e0a8105e16a5249a5f4",
+    "noProcedures": true,
+    "noInventedMagneticCourses": true
   }
 ]
