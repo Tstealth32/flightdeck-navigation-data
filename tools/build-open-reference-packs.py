@@ -82,6 +82,20 @@ def build(sources, output):
                 headingTrue=number(row[end + '_heading_degT']), **position(row, end + '_'),
                 oppositeIdent=row[opposite + '_ident'].upper(), oppositeLat=other['lat'],
                 oppositeLon=other['lon'], sourceId=row['id']))
+    india_navaids = []
+    for row in csv.DictReader((sources / 'navaids.csv').open()):
+        if row['iso_country'] != 'IN' or row['type'] not in ('VOR-DME', 'VOR', 'NDB', 'NDB-DME'):
+            continue
+        ident, p, freq = row['ident'].upper(), position(row), number(row['frequency_khz'])
+        if not re.fullmatch('[A-Z0-9]{1,5}', ident) or p['lat'] is None or freq is None or freq <= 0:
+            continue
+        kind = 'VOR/DME' if row['type'] == 'VOR-DME' else 'VOR' if row['type'] == 'VOR' else 'NDB'
+        key = 'OA:IN:' + row['id']
+        india_navaids.append(dict(key=key, ident=ident, region='IN', **p, type=kind,
+            sourceType=row['type'], freq=int(freq), name=row['name'],
+            elevation=number(row['elevation_ft']), associatedAirport=row['associated_airport'],
+            dme='DME' in row['type'], source='OurAirports public-domain navaid reference', sourceId=row['id']))
+    assert len({n['key'] for n in india_navaids}) == len(india_navaids)
     results = []
     snapshot = origin['sourceCommitDate'][:10]
     for subset, title in [('europe', 'Europe'), ('spain', 'Spain'), ('india', 'India')]:
@@ -95,11 +109,13 @@ def build(sources, output):
             assert all(k in chosen for k in ['VIDP', 'VABB', 'VOBL', 'VOMM'])
         if subset == 'europe':
             assert 'EGLL' in chosen
-        counts = dict(airports=len(chosen), waypoints=0, navaids=0, airways=0, routes=0, procedures=0)
+        navaids = india_navaids if subset == 'india' else []
+        counts = dict(airports=len(chosen), waypoints=0, navaids=len(navaids), airways=0, routes=0, procedures=0)
         countries = dict(sorted(collections.Counter(a['region'] for a in chosen.values()).items()))
         coverage = (title + ' ICAO airport/runway reference' +
                     (', including Spanish Canary Islands. ' if subset != 'india' else '. ') +
-                    'No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. '
+                    ('No SID, STAR, approach, airway, waypoint or transition-altitude data. '
+                     if subset == 'india' else 'No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. ') +
                     'Not an AIRAC navigation database; community snapshot for simulator reference only.')
         name = f'flightdeck-{subset}-reference-{snapshot.replace("-", "")}.navdb'
         target = output / name
@@ -122,6 +138,7 @@ def build(sources, output):
             db.execute('CREATE INDEX airports_geo ON airports(lat,lon)')
             db.execute('CREATE TABLE procedures(airport TEXT NOT NULL,kind TEXT NOT NULL,ident TEXT NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(airport,kind,ident))')
             db.executemany('INSERT INTO airports VALUES(?,?,?,?,?,?)', [(k, k, a['region'], a['lat'], a['lon'], compact(a)) for k, a in chosen.items()])
+            db.executemany('INSERT INTO navaids VALUES(?,?,?,?,?,?)', [(n['key'], n['ident'], 'IN', n['lat'], n['lon'], compact(n)) for n in navaids])
             db.executemany('INSERT INTO metadata VALUES(?,?)', [(k, compact(v)) for k, v in metadata.items()])
             db.commit()
             db.execute('VACUUM')

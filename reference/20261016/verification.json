@@ -40,8 +40,12 @@
       "VOMM": 4,
       "VIAR": 2
     },
-    "sha256": "8a7da40cced37590e99cfa97230805d5315d12edd73e4e0a8105e16a5249a5f4",
+    "sha256": "1c6027e11f3a2ef11140ba2ae802eb0345433235e4ded126a29a273644258c38",
     "noProcedures": true,
-    "noInventedMagneticCourses": true
+    "noInventedMagneticCourses": true,
+    "navaids": 175,
+    "checkedNavaid": {
+      "AAE": 113100
+    }
   }
 ]

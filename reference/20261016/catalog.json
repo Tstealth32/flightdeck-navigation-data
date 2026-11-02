@@ -184,7 +184,7 @@
       "validTo": "2026-10-17",
       "validityKind": "reference-snapshot-not-airac",
       "snapshotDate": "2026-10-16",
-      "coverage": "India ICAO airport/runway reference. No SID, STAR, approach, airway, waypoint, navaid or transition-altitude data. Not an AIRAC navigation database; community snapshot for simulator reference only.",
+      "coverage": "India ICAO airport/runway reference. No SID, STAR, approach, airway, waypoint or transition-altitude data. Not an AIRAC navigation database; community snapshot for simulator reference only.",
       "supplier": "OurAirports community",
       "licenseReference": "OurAirports Unlicense / public domain; see OurAirports-LICENSE.txt",
       "referenceOnly": true,
@@ -197,7 +197,7 @@
       "counts": {
         "airports": 180,
         "waypoints": 0,
-        "navaids": 0,
+        "navaids": 175,
         "airways": 0,
         "routes": 0,
         "procedures": 0
@@ -222,6 +222,12 @@
             "sha256": "eff294dc5c055e7bb48ef43cb3b564399f2741bbfbba0c18c085aea7b9ab988b"
           },
           {
+            "file": "navaids.csv",
+            "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/navaids.csv",
+            "bytes": 1524931,
+            "sha256": "d7292380662c33a95214945023ec0a5b13189599305fd18be739e167a97a9bd1"
+          },
+          {
             "file": "LICENSE",
             "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/LICENSE",
             "bytes": 1211,
@@ -230,8 +236,8 @@
         ]
       },
       "ambiguousExcluded": [],
-      "bytes": 253952,
-      "sha256": "8a7da40cced37590e99cfa97230805d5315d12edd73e4e0a8105e16a5249a5f4",
+      "bytes": 315392,
+      "sha256": "1c6027e11f3a2ef11140ba2ae802eb0345433235e4ded126a29a273644258c38",
       "file": "flightdeck-india-reference-20261016.navdb",
       "runwayEnds": 370
     }
